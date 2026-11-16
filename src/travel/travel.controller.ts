@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { TravelService } from './travel.service';
 import { CreateTravelDto } from './dto/create-travel.dto';
 import { UpdateTravelDto } from './dto/update-travel.dto';
@@ -9,7 +17,7 @@ export class TravelController {
 
   @Post()
   create(@Body() createTravelDto: CreateTravelDto) {
-    return this.travelService.create(createTravelDto);
+    return 'Planifier un nouveau voyage ici';
   }
 
   @Get()
